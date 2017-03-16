@@ -1,6 +1,7 @@
 #!/bin/bash
 
 . helper_scripts/print_format
+. helper_scripts/link_file
 
 marquee "Base Dependencies"
 DEPENDENCIES=$(find dependency_scripts -type f -name '*.sh')
@@ -35,6 +36,14 @@ ALIAS_SCRIPTS=$(find aliases -type f -name '*.sh')
 for alias_script in $ALIAS_SCRIPTS
 do
   $alias_script
+done
+
+marquee "Symlink Home Files"
+SYMLINKS=$(find home -type f -name '*.symlink')
+for symlink in $SYMLINKS
+do
+  dst="$HOME/.$(basename "${symlink%.*}")"
+  link_file "$(pwd)/$symlink" "$dst"
 done
 
 
