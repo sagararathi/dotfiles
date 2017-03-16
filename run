@@ -1,0 +1,45 @@
+#!/bin/bash
+
+. helper_scripts/print_format
+
+marquee "Base Dependencies"
+DEPENDENCIES=$(find dependency_scripts -type f -name '*.sh')
+for dependency in $DEPENDENCIES
+do
+  $dependency
+done
+
+marquee "Brew Dependencies"
+cd home
+RESULTS=$(brew bundle | grep Success)
+note "$RESULTS"
+cd - > /dev/null 2>&1
+
+marquee "Useful System Scripts"
+SCRIPTS=$(find scripts -type f -name '*.sh')
+for script in $SCRIPTS
+do
+  $script
+done
+
+marquee "Configure Apache"
+# TODO
+
+marquee "Launch Services"
+report_service "$(brew services start mysql)"
+report_service "$(brew services start redis)"
+report_service "$(brew services start elasticsearch)"
+
+marquee "Symlink Aliases"
+ALIAS_SCRIPTS=$(find aliases -type f -name '*.sh')
+for alias_script in $ALIAS_SCRIPTS
+do
+  $alias_script
+done
+
+
+marquee "Setup Terminal Theme"
+# TODO
+
+marquee "Setup IDE"
+# TODO
