@@ -2,7 +2,11 @@
 
 . helper_scripts/print_format
 
-if ! [ -f git/gitconfig.local.symlink ]
+gitconfig='gitconfig.local'
+template="$DOTFILE_PATH/templates/$gitconfig.template"
+symlink="$DOTFILE_PATH/config/$gitconfig.symlink"
+
+if ! [ -f $symlink ]
 then
   info 'setup gitconfig'
 
@@ -17,7 +21,10 @@ then
   user ' - What is your github author email?'
   read -e git_authoremail
 
-  sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
+  sed -e "s/AUTHORNAME/$git_authorname/g" \
+      -e "s/AUTHOREMAIL/$git_authoremail/g" \
+      -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
+      $template > $symlink
 
   report 'gitconfig'
 fi

@@ -1,5 +1,5 @@
 # ANTIGEN
-source ~/antigen.zsh
+source $DOTFILE_PATH/executables/antigen.zsh
 
 # ANTIGEN THEME
 antigen-use oh-my-zsh

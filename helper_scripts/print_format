@@ -37,6 +37,10 @@ skipping() {
   printf "$fmt\n" "$@"  
 }
 
+user() {
+  printf "\r  [ ${ORANGE}??${NC} ] $1\n"
+}
+
 marquee() {
   local fmt="${GREEN}$1${NC}"; shift
 
