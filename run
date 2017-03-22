@@ -54,9 +54,5 @@ do
   link_file "$(pwd)/$symlink" "$dst"
 done
 
-
 marquee "Setup Terminal Theme"
-# TODO
-
-marquee "Setup IDE"
 # TODO

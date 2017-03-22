@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"SideBarEnhancements"
+	],
+	"installed_packages":
+	[
+		"ApacheConf.tmLanguage",
+		"ApplySyntax",
+		"CoffeeCompile",
+		"CoffeeScript",
+		"HexViewer",
+		"Markdown Extended",
+		"nginx",
+		"Package Control",
+		"ReactJS",
+		"RubyTest",
+		"Sass",
+		"SideBarEnhancements",
+		"Theme - Afterglow"
+	]
+}
