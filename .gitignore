@@ -2,3 +2,4 @@ executables/*
 !executables/.keep
 config/*
 !config/.keep
+*.DS_Store

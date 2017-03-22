@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"SideBarEnhancements",
+		"SideBarGit",
+		"Vintage"
+	],
+	"tab_size": 2,
+	"theme": "Afterglow.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

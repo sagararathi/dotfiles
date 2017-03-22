@@ -9,10 +9,9 @@ PACKAGES_PATH="$SUBLIME_PATH/Packages/User"
 SETTINGS="$PACKAGES_PATH/$FILENAME"
 PKG_NAME="Sublime Text: Package Settings"
 
-if [ -f "$SETTINGS" ]; then
-  skipping "$PKG_NAME - already installed"
-else
-  doing "Installing $PKG_NAME"
-  link_file "$(pwd)/scripts/sublime/$FILENAME.symlink" "$SETTINGS"
-  doing_complete
-fi
+marquee "Symlink Sublime Settings Files"
+find scripts/sublime/user_settings -type f -name '*.symlink*' -print0 | while IFS= read -r -d '' symlink; do
+  dst="$PACKAGES_PATH/$(basename "${symlink%.*}")"
+  src="$(pwd)/$symlink"
+  link_file "$src" "$dst"
+done
