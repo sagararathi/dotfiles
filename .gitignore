@@ -3,3 +3,5 @@ executables/*
 config/*
 !config/.keep
 *.DS_Store
+
+*localrc.symlink
