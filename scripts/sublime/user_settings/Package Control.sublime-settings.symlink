@@ -2,7 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"SideBarEnhancements"
+		"CoffeeScript"
 	],
 	"installed_packages":
 	[
@@ -12,6 +12,8 @@
 		"CoffeeScript",
 		"GoSublime",
 		"HexViewer",
+		"IcedCoffeeScript",
+		"Jekyll",
 		"Markdown Extended",
 		"nginx",
 		"Package Control",

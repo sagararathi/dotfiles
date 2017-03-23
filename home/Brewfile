@@ -66,6 +66,7 @@ brew 'zstd'
 
 cask 'air-video-server-hd'
 cask 'cyberduck'
+cask 'docker-toolbox'
 cask 'divvy'
 cask 'dropbox'
 cask 'flux'
