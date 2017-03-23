@@ -1,0 +1,2 @@
+#!/bin/zsh
+curl ipecho.net/plain ; echo
