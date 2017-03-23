@@ -3,7 +3,7 @@
 . helper_scripts/print_format
 
 FILENAME="Package Control.sublime-package"
-SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 2"
+SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 3"
 PACKAGES_PATH="$SUBLIME_PATH/Installed Packages"
 PACKAGE_CONTROL="$PACKAGES_PATH/$FILENAME"
 PKG_NAME="Sublime Text: Package Control"

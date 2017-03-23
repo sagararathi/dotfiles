@@ -4,7 +4,7 @@
 . helper_scripts/link_file
 
 FILENAME="Package Control.sublime-settings"
-SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 2"
+SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 3"
 PACKAGES_PATH="$SUBLIME_PATH/Packages/User"
 SETTINGS="$PACKAGES_PATH/$FILENAME"
 PKG_NAME="Sublime Text: Package Settings"
