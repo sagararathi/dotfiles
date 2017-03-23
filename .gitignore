@@ -1,5 +1,6 @@
 executables/*
 !executables/.keep
+!executables/yaml2json
 config/*
 !config/.keep
 *.DS_Store
