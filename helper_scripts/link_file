@@ -3,7 +3,7 @@
 link_file () {
   if ! [ -f "$2" ]
   then
-    ln -s "$1" "$2"
+    sudo ln -s "$1" "$2"
   else
     skipping "$2 - already linked"
   fi
