@@ -2,14 +2,12 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"CoffeeScript"
 	],
 	"installed_packages":
 	[
 		"ApacheConf.tmLanguage",
 		"ApplySyntax",
 		"CoffeeCompile",
-		"CoffeeScript",
 		"GoSublime",
 		"HexViewer",
 		"IcedCoffeeScript",
