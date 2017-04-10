@@ -19,6 +19,7 @@ brew 'ffmpeg', args: [
   'with-theora',
   'with-x265'
 ]
+brew 'figlet'
 brew 'fontconfig'
 brew 'freetype'
 brew 'fribidi'
@@ -41,6 +42,7 @@ brew 'libvo-aacenc'
 brew 'libvorbis'
 brew 'libvpx'
 brew 'libyaml'
+brew 'lolcat'
 brew 'lua'
 brew 'mysql'
 brew 'node'
