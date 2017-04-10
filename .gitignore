@@ -6,3 +6,5 @@ config/*
 *.DS_Store
 
 *localrc.symlink
+
+*-apache.conf
