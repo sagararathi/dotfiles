@@ -31,13 +31,6 @@ report_service "$(brew services start mysql)"
 report_service "$(brew services start redis)"
 report_service "$(brew services start elasticsearch)"
 
-marquee "Symlink Aliases"
-ALIAS_SCRIPTS=$(find aliases -type f -name '*.sh')
-for alias_script in $ALIAS_SCRIPTS
-do
-  $alias_script
-done
-
 marquee "Symlink Home Files"
 SYMLINKS=$(find home -type f -name '*.symlink')
 for symlink in $SYMLINKS
