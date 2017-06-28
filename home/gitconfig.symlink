@@ -1,0 +1,18 @@
+[push]
+  default = simple
+  followTags = true
+[hub]
+  protocol = ssh
+[alias]
+  co = checkout
+  st = status
+  prune = fetch --prune
+  undo = reset --soft HEAD^
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[core]
+  editor = /usr/bin/vim
+[status]
+  showUntrackedFiles = all
+[user]
+  name = Justin Grubbs
+  email = justin@kingandpartners.com

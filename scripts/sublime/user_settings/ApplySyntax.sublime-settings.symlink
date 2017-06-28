@@ -20,6 +20,12 @@
       "rules": [
         { "file_name": ".*sublime-settings\\.symlink$" }
       ]
+    },
+    {
+      "name": "YAML/YAML",
+      "rules": [
+        { "file_path": ".*\\.config$" }
+      ]
     }
   ]
 }
