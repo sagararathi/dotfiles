@@ -97,6 +97,7 @@ cask 'tunnelblick'
 cask 'unetbootin'
 cask 'unrarx'
 cask 'vlc'
+cask 'wireshark'
 cask 'zeplin'
 
 # Quick Look Plugins
