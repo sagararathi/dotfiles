@@ -1,5 +1,5 @@
 # shortcut to this dotfiles path is $DOTFILE_PATH
-export DOTFILE_PATH=$HOME/Projects/jGRUBBS/dotfiles
+export DOTFILE_PATH=$HOME/Projects/sagararathi/dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Projects
